@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>&lt;head&gt; Generator by Dimpurr</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>.title:checked ~ .fixed .ctn .code .title, .html5:checked ~ .fixed .ctn .code .html5, .html4:checked ~ .fixed .ctn .code .html4, .keywords:checked ~ .fixed .ctn .code .keywords, block {
+		display: block;
+	}</style>
+</head>
+<body>
+	<div class="ctn"><div class="content">
+		<header class="header">
+			<h1>HTML &lt;head&gt; Generator</h1>
+			<p>
+				Socure at Github by <a href="http://dimpurr.com/" alt="Dimpurr Cheny">Dimpurr</a>
+				<br/>
+				<a href="http://to.find.moe/head" title="HTML &lt;head&gt; Generator by Dimpurr">Drag to Add Favourite</a>
+			</p>
+		</header>
+		<h2 class="sectionh">Document Base Meta</h2>
+
+		<input type="checkbox" name="title" class="check checkbox title" checked title="Title of Web Page">
+		<span>Title</span>
+		<input type="radio" name="doctype" class="check radio html5" checked title="HTML5 Doctype Tag">
+		<span>HTML5 Doctype</span>
+		<input type="radio" name="doctype" class="check radio html4"  title="HTML4 Doctype Tag">
+		<span>HTML4 Doctype</span>
+
+		<h2 class="sectionh">SEO Meta</h2>
+
+		<input type="checkbox" name="keywords" class="check checkbox keywords"  title="Keywords for Search Tools">
+		<span>Keywords</span>
+
+		<div class="fixed"><div class="ctn"><div class="code">
+			<section class="title">&lt;title&gt;<span class="value" contenteditable>{{value}}</span>&lt;/title&gt;</section>
+			<section class="html5">&lt;!DOCTYPE html&gt;</section>
+			<section class="html4">&lt;!DOCTYPE html4&gt;</section>
+			<section class="keywords">&lt;meta name="keywords" content="<span class="value" contenteditable>{{value}}</span>" /&gt;</section>
+		</div></div></div>
+
+	</div></div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+body {
+	font-family: 'Segoe UI', sans-serif;
+	padding: 12px 20px 0 20px;
+}
+
+.ctn {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.content {
+	margin-right: 360px;
+}
+
+.header {
+	margin-bottom: 26px;
+	padding-left: 10px;
+}
+
+.header h1 {
+	margin: 0 0 8px 0;
+	padding: 0;
+	font-size: 24px;
+	color: #0D47A1;
+}
+
+.header p {
+	margin: 4px 0 10px 0;
+	font-size: 14px;
+	color: #AAA;
+}
+
+.header p a {
+	color: #999;
+}
+
+h2.sectionh {
+	padding: 4px 0 12px 4px;
+	margin: 0 0 8px 0;
+	font-size: 18px;
+	border-top: 1px solid #DDD;
+	color: #29B6F6;
+}
+
+h2.sectionh::before {
+	content: "# ";
+	opacity: 0.5;
+}
+
+.check {
+	display: block;
+	z-index: 10;
+	width: 180px;
+	height: 40px;
+	opacity: 0;
+	margin-top: -30px;
+}
+
+h2 + .check {
+	margin-top: 0;
+}
+
+.check + span {
+	display: block;
+	position: relative;
+	top: -43px;
+	left: 2px;
+	z-index: -1;
+	height: 40px;
+	width: 180px;
+	line-height: 40px;
+	text-align: center;
+	background: #EEE;
+	border: 1px solid #DCDCDC;
+	border-radius: 2px;
+	transition: all ease 0.1s;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.check:hover + span {
+	background: #FCFCFC;
+	box-shadow: 0 0 0 3px rgba(187, 222, 251, 0.45) inset;
+}
+
+.check:checked + span {
+	background: #1976D2;
+	color: #EEE;
+}
+
+.radio + span::after {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 56px;
+	background: #0288D1;
+	margin-left: 190px;
+	margin-top: -48px;
+}
+
+.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.fixed .ctn {
+	position: relative;
+}
+
+.code {
+	position: absolute;
+	right: 0;
+	border: 1px solid #DDD;
+	margin: 54px 20px 10px 10px;
+	width: 280px;
+	text-align: left;
+	background: #FAFAFA;
+	border: 1px solid #DDD;
+	padding: 12px 20px;
+}
+
+.code::before {
+	content: "Code Preview";
+	display: block;
+	position: absolute;
+	top: -30px;
+	left: 0;
+	padding-left: 16px;
+	font-size: 17px;
+	font-weight: bold;
+	border-left: 4px solid #0288D1;;
+	color: #0288D1;
+}
+
+.code section {
+	display: none;
+	font-size: 14px;
+	font-family: 'Courier';
+	line-height: 1.4em;
+	padding: 0;
+	margin: 0;
+}
+
+.code section.dis {
+	display: block;
+}
+
+.code span {
+	padding: 2px 6px;
+	margin: 0 6px;
+	font-size: 13px;
+	border: 1px solid #DDD;
+	transition: all ease 0.1s;
+}
+
+.code span:focus {
+	outline: none;
+	background: #FFF;
+	border-color: #999;
+}
+
+.doctype5:checked ~ .fixed .ctn .code .doctype5,
+.doctype4:checked ~ .fixed .ctn .code .doctype4,
+.doctype3:checked ~ .fixed .ctn .code .doctype3,
+.title:checked ~ .fixed .ctn .code .title {
+	display: block;
+}
