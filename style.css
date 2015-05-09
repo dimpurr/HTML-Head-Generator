@@ -50,8 +50,8 @@ h2.sectionh::before {
 .check {
 	display: block;
 	z-index: 10;
-	width: 180px;
-	height: 40px;
+	width: 220px;
+	height: 36px;
 	opacity: 0;
 	margin-top: -30px;
 }
@@ -63,19 +63,17 @@ h2 + .check {
 .check + span {
 	display: block;
 	position: relative;
-	top: -43px;
+	top: -39px;
 	left: 2px;
 	z-index: -1;
-	height: 40px;
-	width: 180px;
-	line-height: 40px;
+	height: 36px;
+	width: 220px;
+	line-height: 36px;
 	text-align: center;
 	background: #EEE;
 	border: 1px solid #DCDCDC;
 	border-radius: 2px;
 	transition: all ease 0.1s;
-	overflow: hidden;
-	text-overflow: ellipsis;
 }
 
 .check:hover + span {
@@ -92,10 +90,10 @@ h2 + .check {
 	content: "";
 	display: block;
 	width: 1px;
-	height: 56px;
+	height: 47px;
 	background: #0288D1;
-	margin-left: 190px;
-	margin-top: -48px;
+	margin-left: 230px;
+	margin-top: -43px;
 }
 
 .fixed {

@@ -3,7 +3,7 @@
 <head>
 	<title>&lt;head&gt; Generator by Dimpurr</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<style>.title:checked ~ .fixed .ctn .code .title, .html5:checked ~ .fixed .ctn .code .html5, .html4:checked ~ .fixed .ctn .code .html4, .keywords:checked ~ .fixed .ctn .code .keywords, block {
+	<style>.html5:checked ~ .fixed .ctn .code .html5, .html4:checked ~ .fixed .ctn .code .html4, .title:checked ~ .fixed .ctn .code .title, .keywords:checked ~ .fixed .ctn .code .keywords, block {
 		display: block;
 	}</style>
 </head>
@@ -19,12 +19,12 @@
 		</header>
 		<h2 class="sectionh">Document Base Meta</h2>
 
-		<input type="checkbox" name="title" class="check checkbox title" checked title="Title of Web Page">
-		<span>Title</span>
 		<input type="radio" name="doctype" class="check radio html5" checked title="HTML5 Doctype Tag">
 		<span>HTML5 Doctype</span>
 		<input type="radio" name="doctype" class="check radio html4"  title="HTML4 Doctype Tag">
 		<span>HTML4 Doctype</span>
+		<input type="checkbox" name="title" class="check checkbox title" checked title="Title of Web Page">
+		<span>Title</span>
 
 		<h2 class="sectionh">SEO Meta</h2>
 
@@ -32,10 +32,11 @@
 		<span>Keywords</span>
 
 		<div class="fixed"><div class="ctn"><div class="code">
+			<section class="html5">&lt;!DOCTYPE html&gt;<br />&lt;head&gt;</section>
+			<section class="html4">&lt;!DOCTYPE html4&gt;<br />&lt;head&gt;</section>
 			<section class="title">&lt;title&gt;<span class="value" contenteditable>{{value}}</span>&lt;/title&gt;</section>
-			<section class="html5">&lt;!DOCTYPE html&gt;</section>
-			<section class="html4">&lt;!DOCTYPE html4&gt;</section>
 			<section class="keywords">&lt;meta name="keywords" content="<span class="value" contenteditable>{{value}}</span>" /&gt;</section>
+			<section style="display: block">&lt;/head&gt;</section>
 		</div></div></div>
 
 	</div></div>

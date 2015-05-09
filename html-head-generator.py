@@ -32,25 +32,25 @@ html_foot = """\n	</div></div>
 data = [
 	{ "base": [
 		{ "__name__": "Document Base Meta" },
+		{ "doctype": [
+			{ "html5": [
+				"HTML5 Doctype",
+				"""<!DOCTYPE html>{{br}}<head>""",
+				"HTML5 Doctype Tag",
+				"checked",
+			]},
+			{ "html4": [
+				"HTML4 Doctype",
+				"<!DOCTYPE html4>{{br}}<head>",
+				"HTML4 Doctype Tag",
+			]}
+		]},
 		{ "title": [
 			"Title",
 			"<title>{{value}}</title>",
 			"Title of Web Page",
 			"checked",
 		]},
-		{ "doctype": [
-			{ "html5": [
-				"HTML5 Doctype",
-				"<!DOCTYPE html>",
-				"HTML5 Doctype Tag",
-				"checked",
-			]},
-			{ "html4": [
-				"HTML4 Doctype",
-				"<!DOCTYPE html4>",
-				"HTML4 Doctype Tag",
-			]}
-		]}
 	]},
 	{ "seo": [
 		{ "__name__": "SEO Meta" },
@@ -140,9 +140,11 @@ for section_dict in data:
 					for checkbox_id in module:
 						html += "			<section class=\"" + checkbox_id + "\">" + cgi.escape(module[checkbox_id][1]) + "</section>\n"
 
-html += """		</div></div></div>\n"""
+html += """			<section style="display: block">&lt;/head&gt;</section>
+		</div></div></div>\n"""
 html += html_foot
 
+html = html.replace('{{br}}','<br />')
 html = html.replace('{{value}}','<span class="value" contenteditable>{{value}}</span>')
 html = html.replace('{{uri}}','<span class="uri" contenteditable>{{uri}}</span>')
 
