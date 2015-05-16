@@ -39,8 +39,8 @@ html_foot = """\n	</div></div>
 </html>\n"""
 
 data = [
-	{ "base": [
-		{ "__name__": "Document Base Meta" },
+	{ "doc": [
+		{ "__name__": "HTML Doctype" },
 		{ "doctype": [
 			{ "html5": [
 				"HTML 5 and Newer",
@@ -62,8 +62,31 @@ data = [
 				"HTML 4.01 Frameset",
 				"""<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">""",
 				"HTML 4.01 Frameset Doctype Tag",
-			]}
+			]},
+			{ "xhtml1-0-strict": [
+				"XHTML 1.0 Strict",
+				"""<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">""",
+				"XHTML 1.0 Strict Doctype Tag",
+			]},
+			{ "xhtml1-0-transitional": [
+				"XHTML 1.0 Transitional",
+				"""<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">""",
+				"XHTML 1.0 Transitional Doctype Tag",
+			]},
+			{ "xhtml1-0-frameset": [
+				"XHTML 1.0 Frameset",
+				"""<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">""",
+				"XHTML 1.0 Frameset Doctype Tag",
+			]},
+			{ "xhtml1-1": [
+				"XHTML 1.1 (Strict)",
+				"""<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">""",
+				"XHTML 1.1 (Strict) Doctype Tag",
+			]},
 		]},
+	]},
+	{ "base": [
+		{ "__name__": "Document Base Meta" },
 		{ "html-lang": [
 			{ "html-lang-zh-cmn-hans": [
 				"Simplified Chinese",
@@ -283,7 +306,7 @@ data = [
 			"""<meta name="x5-fullscreen" content="true">""",
 			"Enable QQ Browser Fullscreen Mode"
 		]},
-		{ "uc-orientation-mode": [
+		{ "qq-orientation-mode": [
 			{ "qq-portrait-mode": [
 				"QQ Browser Portrait",
 				"""<meta name="x5-orientation" content="portrait">""",
@@ -337,7 +360,7 @@ html += """block {
 	display: none;
 }
 
-.radio[class*="html4"]:checked ~ .fixed .ctn .code section[class$="--new"] {
+.radio[class*="html4"]:checked ~ .fixed .ctn .code section[class$="--new"], .radio[class*="xhtml"]:checked ~ .fixed .ctn .code section[class$="--new"] {
 	display: none;
 }
 
@@ -345,7 +368,7 @@ html += """block {
 	display: none;
 }
 
-.radio[class*="html4"]:checked ~ .check[name$="--new"], .radio[class*="html4"]:checked ~ .check[name$="--new"] + span {
+.radio[class*="html4"]:checked ~ .check[name$="--new"], .radio[class*="html4"]:checked ~ .check[name$="--new"] + span, .radio[class*="xhtml"]:checked ~ .check[name$="--new"], .radio[class*="xhtml"]:checked ~ .check[name$="--new"] + span {
 	display: none;
 }</style>\n"""
 

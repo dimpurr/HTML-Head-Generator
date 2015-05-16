@@ -78,7 +78,7 @@ h2 + .check {
 }
 
 .check:hover + span {
-	background: #FCFCFC;
+	background: #FAFAFA;
 	box-shadow: 0 0 0 3px rgba(187, 222, 251, 0.45) inset;
 }
 
