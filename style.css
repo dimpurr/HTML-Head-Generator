@@ -1,32 +1,31 @@
 body {
 	font-family: 'Segoe UI', 'Helvetica', 'Open Sans', sans-serif;
-	padding: 12px 20px 0 20px;
+	padding: 12px 10px 0 10px;
+	background: #272822;
 }
 
 .ctn {
-	max-width: 700px;
 	margin: 0 auto;
 }
 
 .content {
-	margin-right: 360px;
 }
 
 .header {
 	margin-bottom: 26px;
-	padding-left: 10px;
+	padding-left: 2px;
 }
 
 .header h1 {
 	margin: 0 0 8px 0;
 	padding: 0;
-	font-size: 24px;
-	color: #0D47A1;
+	font-size: 22px;
+	color: #CFE0FA;
 }
 
 .header p {
 	margin: 4px 0 10px 0;
-	font-size: 14px;
+	font-size: 13px;
 	color: #AAA;
 }
 
@@ -38,7 +37,6 @@ h2.sectionh {
 	padding: 4px 0 12px 4px;
 	margin: 0 0 8px 0;
 	font-size: 18px;
-	border-top: 1px solid #DDD;
 	color: #29B6F6;
 }
 
@@ -71,20 +69,20 @@ h2 + .check {
 	line-height: 36px;
 	text-align: center;
 	font-size: 14px;
-	background: #EEE;
-	border: 1px solid #DCDCDC;
+	background: #232425;
+	color: #CACBCC;
+	border: 1px solid #343536;
 	border-radius: 2px;
 	transition: all ease 0.1s;
 }
 
 .check:hover + span {
-	background: #FAFAFA;
-	box-shadow: 0 0 0 3px rgba(187, 222, 251, 0.45) inset;
+	border-color: #78797A;
 }
 
 .check:checked + span {
-	background: #1976D2;
-	color: #EEE;
+	background: #151617;
+	color: #FEFEFE;
 }
 
 .radio + span::after {
@@ -111,18 +109,20 @@ h2 + .check {
 .code {
 	position: absolute;
 	right: 0;
-	border: 1px solid #DDD;
-	margin: 54px 20px 10px 10px;
-	width: 280px;
-	max-height: 75vh;
+	margin: 0 0 0 10px;
+	width: 60vw;
+	width: calc(100vw - 280px);
+	height: 100vh;
+	box-sizing: border-box;
 	overflow-y: scroll;
 	text-align: left;
-	background: #FAFAFA;
-	border: 1px solid #DDD;
-	padding: 12px 20px;
+	border-left: 1px solid #454647;
+	padding: 30px 30px 20px 30px;
+	background: #1A1B1C;
+	color: #E0E0E0;
 }
 
-.fixed .ctn::before {
+/* .fixed .ctn::before {
 	content: "Code Preview";
 	display: block;
 	position: absolute;
@@ -134,7 +134,7 @@ h2 + .check {
 	font-weight: bold;
 	border-left: 4px solid #0288D1;;
 	color: #0288D1;
-}
+} */
 
 .code section {
 	display: none;
@@ -150,16 +150,17 @@ h2 + .check {
 }
 
 .code span {
-	padding: 0 6px;
+	margin: 0 2px;
 	font-size: 13px;
-	border: 1px solid #DDD;
+	color: #78797A;
+	border-bottom: 1px solid #777;
 	transition: all ease 0.1s;
 }
 
 .code span:focus {
 	outline: none;
-	background: #FFF;
-	border-color: #999;
+	color: #FAFBFC;
+	border-color: #AAA;
 }
 
 @media (max-width: 600px) {
