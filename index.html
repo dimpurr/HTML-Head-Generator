@@ -1,42 +1,205 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-cmn-Hans">
 <head>
+	<meta charset="utf-8">
 	<title>&lt;head&gt; Generator by Dimpurr</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="HandheldFriendly" content="true">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<meta name="application-name" content="&lt;head&gt; Generator" />
+	<meta name="description" content="A HTML Head Tag Generator by Dimpurr Cheny">
+	<meta name="author" content="dimpurr, dimpurr@live.com">
+
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<style>.html5:checked ~ .fixed .ctn .code .html5, .html4:checked ~ .fixed .ctn .code .html4, .title:checked ~ .fixed .ctn .code .title, .keywords:checked ~ .fixed .ctn .code .keywords, block {
+	<style>.html5:checked ~ .fixed .ctn .code .html5, .html4-strict:checked ~ .fixed .ctn .code .html4-strict, .html4-transitional:checked ~ .fixed .ctn .code .html4-transitional, .html4-frameset:checked ~ .fixed .ctn .code .html4-frameset, .html-lang-zh-cmn-hans:checked ~ .fixed .ctn .code .html-lang-zh-cmn-hans, .html-lang-zh-cmn-hant:checked ~ .fixed .ctn .code .html-lang-zh-cmn-hant, .html-lang-en-us:checked ~ .fixed .ctn .code .html-lang-en-us, .html-lang-other:checked ~ .fixed .ctn .code .html-lang-other, .charset--new:checked ~ .fixed .ctn .code .charset--new, .charset--old:checked ~ .fixed .ctn .code .charset--old, .title:checked ~ .fixed .ctn .code .title, .application-name:checked ~ .fixed .ctn .code .application-name, .keywords:checked ~ .fixed .ctn .code .keywords, .description:checked ~ .fixed .ctn .code .description, .author:checked ~ .fixed .ctn .code .author, .robots:checked ~ .fixed .ctn .code .robots, .disable-baidu-siteapp:checked ~ .fixed .ctn .code .disable-baidu-siteapp, .disable-google-auto-translate:checked ~ .fixed .ctn .code .disable-google-auto-translate, .rss:checked ~ .fixed .ctn .code .rss, .favicon:checked ~ .fixed .ctn .code .favicon, .shortlink:checked ~ .fixed .ctn .code .shortlink, .index:checked ~ .fixed .ctn .code .index, .stylesheet:checked ~ .fixed .ctn .code .stylesheet, .cache-control:checked ~ .fixed .ctn .code .cache-control, .viewport:checked ~ .fixed .ctn .code .viewport, .ie-edge-chrome:checked ~ .fixed .ctn .code .ie-edge-chrome, .chrome-frame:checked ~ .fixed .ctn .code .chrome-frame, .format-detection:checked ~ .fixed .ctn .code .format-detection, .tap-highlight:checked ~ .fixed .ctn .code .tap-highlight, .ios-app-title:checked ~ .fixed .ctn .code .ios-app-title, .ios-app-fullscreen:checked ~ .fixed .ctn .code .ios-app-fullscreen, .ios-app-statusbar:checked ~ .fixed .ctn .code .ios-app-statusbar, .windows-tile-color:checked ~ .fixed .ctn .code .windows-tile-color, .windows-tile-image:checked ~ .fixed .ctn .code .windows-tile-image, .android-theme-color:checked ~ .fixed .ctn .code .android-theme-color, .uc-app-mode:checked ~ .fixed .ctn .code .uc-app-mode, .uc-fullscreen-mode:checked ~ .fixed .ctn .code .uc-fullscreen-mode, .uc-portrait-mode:checked ~ .fixed .ctn .code .uc-portrait-mode, .uc-landscape-mode:checked ~ .fixed .ctn .code .uc-landscape-mode, .uc-fitscreen-mode:checked ~ .fixed .ctn .code .uc-fitscreen-mode, .uc-disable-night-mode:checked ~ .fixed .ctn .code .uc-disable-night-mode, .qq-app-mode:checked ~ .fixed .ctn .code .qq-app-mode, .qq-fullscreen-mode:checked ~ .fixed .ctn .code .qq-fullscreen-mode, .qq-portrait-mode:checked ~ .fixed .ctn .code .qq-portrait-mode, .qq-landscape-mode:checked ~ .fixed .ctn .code .qq-landscape-mode, block {
 		display: block;
-	}</style>
+	}
+
+.html5:checked ~ .fixed .ctn .code section[class$="--old"] {
+	display: none;
+}
+
+.radio[class*="html4"]:checked ~ .fixed .ctn .code section[class$="--new"] {
+	display: none;
+}
+
+.html5:checked ~ .check[name$="--old"], .html5:checked ~ .check[name$="--old"] + span {
+	display: none;
+}
+
+.radio[class*="html4"]:checked ~ .check[name$="--new"], .radio[class*="html4"]:checked ~ .check[name$="--new"] + span {
+	display: none;
+}</style>
 </head>
 <body>
 	<div class="ctn"><div class="content">
 		<header class="header">
 			<h1>HTML &lt;head&gt; Generator</h1>
 			<p>
-				Socure at Github by <a href="http://dimpurr.com/" alt="Dimpurr Cheny">Dimpurr</a>
-				<br/>
+				Author by <a href="http://dimpurr.com/" title="Dimpurr Cheny">Dimpurr</a> - 
 				<a href="http://to.find.moe/head" title="HTML &lt;head&gt; Generator by Dimpurr">Drag to Add Favourite</a>
 			</p>
 		</header>
 		<h2 class="sectionh">Document Base Meta</h2>
 
 		<input type="radio" name="doctype" class="check radio html5" checked title="HTML5 Doctype Tag">
-		<span>HTML5 Doctype</span>
-		<input type="radio" name="doctype" class="check radio html4"  title="HTML4 Doctype Tag">
-		<span>HTML4 Doctype</span>
+		<span>HTML 5 and Newer</span>
+		<input type="radio" name="doctype" class="check radio html4-strict"  title="HTML 4.01 Strict Doctype Tag">
+		<span>HTML 4.01 Strict</span>
+		<input type="radio" name="doctype" class="check radio html4-transitional"  title="HTML 4.01 Transitional Doctype Tag">
+		<span>HTML 4.01 Transitional</span>
+		<input type="radio" name="doctype" class="check radio html4-frameset"  title="HTML 4.01 Frameset Doctype Tag">
+		<span>HTML 4.01 Frameset</span>
+		<input type="radio" name="html-lang" class="check radio html-lang-zh-cmn-hans" checked title="Set Language to Simplified Chinese">
+		<span>Simplified Chinese</span>
+		<input type="radio" name="html-lang" class="check radio html-lang-zh-cmn-hant"  title="Set Language to Traditional Chinese">
+		<span>Traditional Chinese</span>
+		<input type="radio" name="html-lang" class="check radio html-lang-en-us"  title="Set Language to American English">
+		<span>American English</span>
+		<input type="radio" name="html-lang" class="check radio html-lang-other"  title="Set Language to Other Language Code">
+		<span>Other Language</span>
+		<input type="checkbox" name="charset--new" class="check checkbox charset--new" checked title="Charset of Web Page">
+		<span>Charset</span>
+		<input type="checkbox" name="charset--old" class="check checkbox charset--old" checked title="Charset of Web Page">
+		<span>Charset</span>
 		<input type="checkbox" name="title" class="check checkbox title" checked title="Title of Web Page">
 		<span>Title</span>
 
 		<h2 class="sectionh">SEO Meta</h2>
 
-		<input type="checkbox" name="keywords" class="check checkbox keywords"  title="Keywords for Search Tools">
+		<input type="checkbox" name="application-name" class="check checkbox application-name"  title="Application Name for Search Engines">
+		<span>Application Name</span>
+		<input type="checkbox" name="keywords" class="check checkbox keywords"  title="Keywords for Search Engines">
 		<span>Keywords</span>
+		<input type="checkbox" name="description" class="check checkbox description"  title="Description for Search Engines">
+		<span>Description</span>
+		<input type="checkbox" name="author" class="check checkbox author"  title="Author for Search Engines">
+		<span>Author</span>
+		<input type="checkbox" name="robots" class="check checkbox robots"  title="Rule for Search Engines Robots">
+		<span>Robots Nofollow</span>
+		<input type="checkbox" name="disable-baidu-siteapp" class="check checkbox disable-baidu-siteapp"  title="Disable Baidu Siteapp Mode, or Baidu will change to read mode and add their Ads">
+		<span>Disable Baidu Siteapp</span>
+		<input type="checkbox" name="disable-google-auto-translate" class="check checkbox disable-google-auto-translate"  title="Disable Google Auto Translate Notice for Chrome">
+		<span>Disable Google Translate</span>
+
+		<h2 class="sectionh">Link</h2>
+
+		<input type="checkbox" name="rss" class="check checkbox rss"  title="Application Name for Search Engines">
+		<span>RSS Feed</span>
+		<input type="checkbox" name="favicon" class="check checkbox favicon" checked title="Application Name for Search Engines">
+		<span>Favicon</span>
+		<input type="checkbox" name="shortlink" class="check checkbox shortlink"  title="Shrotlink for This Web Page">
+		<span>Shortlink</span>
+		<input type="checkbox" name="index" class="check checkbox index"  title="Index for This Web Site">
+		<span>Index</span>
+		<input type="checkbox" name="stylesheet" class="check checkbox stylesheet"  title="Stylesheets for This Web Site">
+		<span>Stylesheet</span>
+
+		<h2 class="sectionh">Platform Compatibility Meta</h2>
+
+		<input type="checkbox" name="cache-control" class="check checkbox cache-control"  title="Enable Cache Control">
+		<span>Cache Control</span>
+		<input type="checkbox" name="viewport" class="check checkbox viewport" checked title="Responsible Set Viewport to Device Width
+Using: width, height, initial-scale, maximum-scale, minimum-scale, user-scalable, minimal-ui (fullscreen in iOS 7 and newer)">
+		<span>Responsible Viewport</span>
+		<input type="checkbox" name="ie-edge-chrome" class="check checkbox ie-edge-chrome" checked title="Prefer Newest IE and Chrome">
+		<span>Prefer Newest Browser</span>
+		<input type="checkbox" name="chrome-frame" class="check checkbox chrome-frame"  title="Prefer Chrome Webkit Mode (in 360 Browser)">
+		<span>Prefer Chrome Frame</span>
+		<input type="checkbox" name="format-detection" class="check checkbox format-detection"  title="Disable Telephone Number Dectect">
+		<span>Disable Number Dectect</span>
+		<input type="checkbox" name="tap-highlight" class="check checkbox tap-highlight"  title="Disable Tap Highlight Effect (Windows Phone)">
+		<span>Disable Tap Highlight</span>
+
+		<h2 class="sectionh">Web App Meta</h2>
+
+		<input type="checkbox" name="ios-app-title" class="check checkbox ios-app-title"  title="App Title for Homescreen (iOS 6 and newer)">
+		<span>iOS App Title</span>
+		<input type="checkbox" name="ios-app-fullscreen" class="check checkbox ios-app-fullscreen"  title="Enable Web App Capable Mode (iOS 6 and newer)">
+		<span>iOS App Fullscreen</span>
+		<input type="checkbox" name="ios-app-statusbar" class="check checkbox ios-app-statusbar"  title="Use: default, black, black-translucent (only take effect after enable fullscreen)">
+		<span>iOS StatusBar Color</span>
+		<input type="checkbox" name="windows-tile-color" class="check checkbox windows-tile-color"  title="Windows Tile Color in Start Screen
+Use: hex color code">
+		<span>Windows Tile Color</span>
+		<input type="checkbox" name="windows-tile-image" class="check checkbox windows-tile-image"  title="Windows Tile Image in Start Screen">
+		<span>Windows Tile Image</span>
+		<input type="checkbox" name="android-theme-color" class="check checkbox android-theme-color"  title="Android Theme Color for Task Manager Tab
+Use: hex color code">
+		<span>Android Theme Color</span>
+		<input type="checkbox" name="uc-app-mode" class="check checkbox uc-app-mode"  title="Enable UC Browser App Mode">
+		<span>UC Browser App Mode</span>
+		<input type="checkbox" name="uc-fullscreen-mode" class="check checkbox uc-fullscreen-mode"  title="Enable UC Browser Fullscreen Mode">
+		<span>UC Browser Fullsreen</span>
+		<input type="radio" name="uc-orientation-mode" class="check radio uc-portrait-mode"  title="Enable UC Browser Portrait Mode">
+		<span>UC Browser Portrait</span>
+		<input type="radio" name="uc-orientation-mode" class="check radio uc-landscape-mode"  title="Enable UC Browser Landscape Mode">
+		<span>UC Browser Landscape</span>
+		<input type="checkbox" name="uc-fitscreen-mode" class="check checkbox uc-fitscreen-mode"  title="Enable UC Browser Fitscreen Mode">
+		<span>UC Browser Fitscreen</span>
+		<input type="checkbox" name="uc-disable-night-mode" class="check checkbox uc-disable-night-mode"  title="Disable UC Browser Night Mode">
+		<span>UC Disable Night Mode</span>
+		<input type="checkbox" name="qq-app-mode" class="check checkbox qq-app-mode"  title="Enable QQ Browser App Mode">
+		<span>QQ Browser App Mode</span>
+		<input type="checkbox" name="qq-fullscreen-mode" class="check checkbox qq-fullscreen-mode"  title="Enable QQ Browser Fullscreen Mode">
+		<span>QQ Browser Fullscreen</span>
+		<input type="radio" name="uc-orientation-mode" class="check radio qq-portrait-mode"  title="Enable QQ Browser Portrait Mode">
+		<span>QQ Browser Portrait</span>
+		<input type="radio" name="uc-orientation-mode" class="check radio qq-landscape-mode"  title="Enable QQ Browser Landscape Mode">
+		<span>QQ Browser Landscape</span>
 
 		<div class="fixed"><div class="ctn"><div class="code">
-			<section class="html5">&lt;!DOCTYPE html&gt;<br />&lt;head&gt;</section>
-			<section class="html4">&lt;!DOCTYPE html4&gt;<br />&lt;head&gt;</section>
-			<section class="title">&lt;title&gt;<span class="value" contenteditable>{{value}}</span>&lt;/title&gt;</section>
-			<section class="keywords">&lt;meta name="keywords" content="<span class="value" contenteditable>{{value}}</span>" /&gt;</section>
-			<section style="display: block">&lt;/head&gt;</section>
+			<section class="__name__">o</section>
+			<section class="html5">&lt;!DOCTYPE html&gt;</section>
+			<section class="html4-strict">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;</section>
+			<section class="html4-transitional">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</section>
+			<section class="html4-frameset">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"&gt;</section>
+			<section class="html-lang-zh-cmn-hans">&lt;html lang="zh-cmn-Hans"&gt;<br />&lt;head&gt;<br /><br /></section>
+			<section class="html-lang-zh-cmn-hant">&lt;html lang="zh-cmn-Hant"&gt;<br />&lt;head&gt;<br /><br /></section>
+			<section class="html-lang-en-us">&lt;html lang="en-us"&gt;<br />&lt;head&gt;<br /><br /></section>
+			<section class="html-lang-other">&lt;html lang="<span class="value" contenteditable>value</span>"&gt;<br />&lt;head&gt;<br /><br /></section>
+			<section class="charset--new">&lt;meta charset="<span class="value" contenteditable>utf-8</span>"&gt;</section>
+			<section class="charset--old">&lt;meta http-equiv="Content-Type" content="text/html; charset=<span class="value" contenteditable>utf-8</span>"&gt;</section>
+			<section class="title">&lt;title&gt;<span class="value" contenteditable>value</span>&lt;/title&gt;</section>
+<br />			<section class="application-name">&lt;meta name="application-name" content="<span class="value" contenteditable>value</span>" /&gt;</section>
+			<section class="keywords">&lt;meta name="keywords" content="<span class="value" contenteditable>value</span>" /&gt;</section>
+			<section class="description">&lt;meta name="description" content="<span class="value" contenteditable>value</span>"&gt;</section>
+			<section class="author">&lt;meta name="author" content="<span class="value" contenteditable>value</span>"&gt;</section>
+			<section class="robots">&lt;meta name="robots" content="<span class="value" contenteditable>noindex,nofollow</span>"&gt;</section>
+			<section class="disable-baidu-siteapp">&lt;meta http-equiv="Cache-Control" content="no-siteapp" /&gt;</section>
+			<section class="disable-google-auto-translate">&lt;meta name="google" value="notranslate"&gt;</section>
+			<section class="__name__">i</section>
+			<section class="rss">&lt;link rel="alternate" type="application/rss+xml" title="RSS" href="<span class="value" contenteditable>uri</span>" /&gt;</section>
+			<section class="favicon">&lt;link rel="shortcut icon" type="image/ico" href="<span class="value" contenteditable>uri</span>" /&gt;</section>
+			<section class="shortlink">&lt;link rel="shortlink" href="<span class="value" contenteditable>uri</span>"" /&gt;</section>
+			<section class="index">&lt;link rel="index" title="<span class="value" contenteditable>value</span>" href="<span class="value" contenteditable>uri</span>" /&gt;</section>
+			<section class="stylesheet">&lt;link rel="stylesheet" type="text/css" media="<span class="value" contenteditable>value</span>" href="<span class="value" contenteditable>uri</span>" /&gt;</section>
+<br />			<section class="cache-control">&lt;meta http-equiv="Cache-Control" content="<span class="value" contenteditable>no-cache</span>"&gt;</section>
+			<section class="viewport">&lt;meta name="viewport" content="<span class="value" contenteditable>width=device-width, initial-scale=1.0</span>"&gt;<br />&lt;meta name="HandheldFriendly" content="true"&gt;</section>
+			<section class="ie-edge-chrome">&lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /&gt;</section>
+			<section class="chrome-frame">&lt;meta name="renderer" content="webkit"&gt;</section>
+			<section class="format-detection">&lt;meta name="format-detection" content="telephone=no" /&gt;</section>
+			<section class="tap-highlight">&lt;meta name="msapplication-tap-highlight" content="no"&gt;</section>
+			<section class="__name__">e</section>
+			<section class="ios-app-title">&lt;meta name="apple-mobile-web-app-title" content="<span class="value" contenteditable>value</span>"&gt;</section>
+			<section class="ios-app-fullscreen">&lt;meta name="apple-mobile-web-app-capable" content="yes" /&gt;</section>
+			<section class="ios-app-statusbar">&lt;meta name="apple-mobile-web-app-status-bar-style" content="<span class="value" contenteditable>black-translucent</span>" /&gt;</section>
+			<section class="windows-tile-color">&lt;meta name="msapplication-TileColor" content="<span class="value" contenteditable>value</span>"/&gt;</section>
+			<section class="windows-tile-image">&lt;meta name="msapplication-TileImage" content="<span class="value" contenteditable>uri</span>"/&gt;</section>
+			<section class="android-theme-color">&lt;meta name="theme-color" content="<span class="value" contenteditable>value</span>"&gt;</section>
+			<section class="uc-app-mode">&lt;meta name="browsermode" content="application"&gt;</section>
+			<section class="uc-fullscreen-mode">&lt;meta name="full-screen" content="yes"&gt;</section>
+			<section class="uc-portrait-mode">&lt;meta name="screen-orientation" content="portrait"&gt;</section>
+			<section class="uc-landscape-mode">&lt;meta name="screen-orientation" content="landscape"&gt;</section>
+			<section class="uc-fitscreen-mode">&lt;meta name="layoutmode" content="fitscreen/standard" /&gt;</section>
+			<section class="uc-disable-night-mode">	&lt;meta name="nightmode" content="enable/disable"/&gt;</section>
+			<section class="qq-app-mode">&lt;meta name="x5-page-mode" content="app"&gt;</section>
+			<section class="qq-fullscreen-mode">&lt;meta name="x5-fullscreen" content="true"&gt;</section>
+			<section class="qq-portrait-mode">&lt;meta name="x5-orientation" content="portrait"&gt;</section>
+			<section class="qq-landscape-mode">&lt;meta name="x5-orientation" content="landscape"&gt;</section>
+			<section style="display: block"><br />&lt;/head&gt;<br />&lt;/html&gt;</section>
 		</div></div></div>
 
 	</div></div>

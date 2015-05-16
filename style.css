@@ -1,5 +1,5 @@
 body {
-	font-family: 'Segoe UI', sans-serif;
+	font-family: 'Segoe UI', 'Helvetica', 'Open Sans', sans-serif;
 	padding: 12px 20px 0 20px;
 }
 
@@ -70,6 +70,7 @@ h2 + .check {
 	width: 220px;
 	line-height: 36px;
 	text-align: center;
+	font-size: 14px;
 	background: #EEE;
 	border: 1px solid #DCDCDC;
 	border-radius: 2px;
@@ -113,18 +114,21 @@ h2 + .check {
 	border: 1px solid #DDD;
 	margin: 54px 20px 10px 10px;
 	width: 280px;
+	max-height: 75vh;
+	overflow-y: scroll;
 	text-align: left;
 	background: #FAFAFA;
 	border: 1px solid #DDD;
 	padding: 12px 20px;
 }
 
-.code::before {
+.fixed .ctn::before {
 	content: "Code Preview";
 	display: block;
 	position: absolute;
-	top: -30px;
-	left: 0;
+	top: 26px;
+	right: 0;
+	width: 320px;
 	padding-left: 16px;
 	font-size: 17px;
 	font-weight: bold;
@@ -134,8 +138,8 @@ h2 + .check {
 
 .code section {
 	display: none;
-	font-size: 14px;
-	font-family: 'Courier';
+	font-size: 12px;
+	font-family: 'Source Code Pro', 'Monaco', 'Droid Sans Mono', 'Inconsolata', 'Consolas', 'Courier', monospace;
 	line-height: 1.4em;
 	padding: 0;
 	margin: 0;
@@ -146,8 +150,7 @@ h2 + .check {
 }
 
 .code span {
-	padding: 2px 6px;
-	margin: 0 6px;
+	padding: 0 6px;
 	font-size: 13px;
 	border: 1px solid #DDD;
 	transition: all ease 0.1s;
@@ -159,9 +162,14 @@ h2 + .check {
 	border-color: #999;
 }
 
-.doctype5:checked ~ .fixed .ctn .code .doctype5,
-.doctype4:checked ~ .fixed .ctn .code .doctype4,
-.doctype3:checked ~ .fixed .ctn .code .doctype3,
-.title:checked ~ .fixed .ctn .code .title {
-	display: block;
+@media (max-width: 600px) {
+
+.content {
+	margin: 0;
+}
+
+.fixed {
+	position: static;
+}
+
 }
