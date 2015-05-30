@@ -30,7 +30,7 @@ html_main = """</head>
 			<h1>HTML &lt;head&gt; Generator</h1>
 			<p>
 				Author by <a href="http://dimpurr.com/" title="Dimpurr Cheny">Dimpurr</a> - 
-				<a href="http://to.find.moe/head" title="HTML &lt;head&gt; Generator by Dimpurr">Drag to Add Favourite</a><br />
+				<a href="http://find.moe/headgen" title="HTML &lt;head&gt; Generator by Dimpurr">Drag to Add Favourite</a><br />
 				Hover the button for Tips
 			</p>
 		</header>"""
