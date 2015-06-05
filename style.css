@@ -75,6 +75,7 @@ h2 + .check {
 	border: 1px solid #343536;
 	border-radius: 2px;
 	transition: all ease 0.1s;
+	cursor: pointer;
 }
 
 .check:hover + span {
